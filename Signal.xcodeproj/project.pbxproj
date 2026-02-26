@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		08F42B76272E2DD8578544AC /* TopNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D151D2A890F7F870419D93B /* TopNavigationBar.swift */; };
 		25091D29C9319D4B52218615 /* TagPillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA272A18A745F6F2DFFB7F /* TagPillsView.swift */; };
-		48556C9608404E77687689CD /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3956ACDA6CB647D88759 /* SidebarView.swift */; };
 		54269F7B1CE2BAC5E80B80E2 /* AntonSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12D7917EE704CDD78CAB8708 /* AntonSC-Regular.ttf */; };
 		58CBC0BE5318948CE8E86A32 /* BottomInfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22685FF6C3C3FE3394029F6 /* BottomInfoCard.swift */; };
 		6609232200E5FFE7540588DF /* SignalTitleOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B98B45E18BA813C0C8EA7E9 /* SignalTitleOverlay.swift */; };
@@ -20,7 +19,6 @@
 		A565550C983F647D80F840EF /* SignalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3413A745B66C81BD7C844EA /* SignalApp.swift */; };
 		A7D3172EF7638550006A8465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69E5DD8FB4D8960CC21C618 /* Assets.xcassets */; };
 		A8543505CCFA3F7E3EFAC3A6 /* SignalTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED41A15746456C672B06EC9 /* SignalTheme.swift */; };
-		DE40754FF5606D854BFD43F7 /* ProjectIntroPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EBE6495BB99E6F0612F754 /* ProjectIntroPopup.swift */; };
 		EBEC4E11C5D25BD0BCFD2D34 /* LandingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1501C251D6BAB2459288212 /* LandingContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,11 +30,9 @@
 		2ABA272A18A745F6F2DFFB7F /* TagPillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPillsView.swift; sourceTree = "<group>"; };
 		52666E8720BAF886EA22C46E /* Inter-VariableFont_opsz_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_opsz_wght.ttf"; sourceTree = "<group>"; };
 		871845332C17813608897CE5 /* SignalBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignalBackground.png; sourceTree = "<group>"; };
-		915A3956ACDA6CB647D88759 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		9B98B45E18BA813C0C8EA7E9 /* SignalTitleOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalTitleOverlay.swift; sourceTree = "<group>"; };
 		9D5999FF8532367E6DBD5F60 /* Signal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Signal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3413A745B66C81BD7C844EA /* SignalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalApp.swift; sourceTree = "<group>"; };
-		B3EBE6495BB99E6F0612F754 /* ProjectIntroPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectIntroPopup.swift; sourceTree = "<group>"; };
 		B69E5DD8FB4D8960CC21C618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4189F4ACA66F5CD28CB527C /* Manrope-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		D1501C251D6BAB2459288212 /* LandingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingContentView.swift; sourceTree = "<group>"; };
@@ -60,8 +56,6 @@
 			children = (
 				F22685FF6C3C3FE3394029F6 /* BottomInfoCard.swift */,
 				D1501C251D6BAB2459288212 /* LandingContentView.swift */,
-				B3EBE6495BB99E6F0612F754 /* ProjectIntroPopup.swift */,
-				915A3956ACDA6CB647D88759 /* SidebarView.swift */,
 				9B98B45E18BA813C0C8EA7E9 /* SignalTitleOverlay.swift */,
 				2ABA272A18A745F6F2DFFB7F /* TagPillsView.swift */,
 				0D151D2A890F7F870419D93B /* TopNavigationBar.swift */,
@@ -202,8 +196,6 @@
 				58CBC0BE5318948CE8E86A32 /* BottomInfoCard.swift in Sources */,
 				845A8FC537C1771C69926398 /* HomeView.swift in Sources */,
 				EBEC4E11C5D25BD0BCFD2D34 /* LandingContentView.swift in Sources */,
-				DE40754FF5606D854BFD43F7 /* ProjectIntroPopup.swift in Sources */,
-				48556C9608404E77687689CD /* SidebarView.swift in Sources */,
 				A565550C983F647D80F840EF /* SignalApp.swift in Sources */,
 				A8543505CCFA3F7E3EFAC3A6 /* SignalTheme.swift in Sources */,
 				6609232200E5FFE7540588DF /* SignalTitleOverlay.swift in Sources */,
@@ -277,6 +269,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Signal uses the camera to preview your hand gestures for air typing.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -343,6 +336,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Signal uses the camera to preview your hand gestures for air typing.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;

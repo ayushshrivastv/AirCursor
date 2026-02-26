@@ -19,7 +19,6 @@ Signal is a macOS SwiftUI desktop app with a modern editorial landing page and c
 ## Run
 
 ```bash
-xcodegen generate
 open Signal.xcodeproj
 ```
 

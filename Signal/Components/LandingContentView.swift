@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct LandingContentView: View {
-    @Binding var isSidebarOpen: Bool
     let onStartTap: () -> Void
     let onLearnTap: () -> Void
     private static let backgroundImage: NSImage? = {
@@ -35,9 +34,7 @@ struct LandingContentView: View {
                     .position(x: proxy.size.width / 2, y: 149 + 130)
                     .zIndex(1)
 
-                TopNavigationBar {
-                    isSidebarOpen.toggle()
-                }
+                TopNavigationBar()
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
                 .padding(.top, 40)
                 .zIndex(10)

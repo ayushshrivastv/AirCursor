@@ -2,6 +2,14 @@
 DerivedData/
 *.xcuserdata/
 *.xcuserstate
+*.swp
 
 .build/
 _archive/
+_artifacts/
+_datasets/
+runs/
+.venv-model/
+.venv-export312/
+yolo11n.pt
+yolov8n.pt
