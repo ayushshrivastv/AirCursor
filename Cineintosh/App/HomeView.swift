@@ -7,6 +7,7 @@ import Vision
 
 struct HomeView: View {
     @State private var showHUD = false
+    @State private var showHowItWorks = false
 
     var body: some View {
         ZStack {
@@ -21,16 +22,145 @@ struct HomeView: View {
                 LandingContentView(
                     onStartTap: {
                         withAnimation(.easeInOut(duration: 0.3)) {
+                            showHowItWorks = false
                             showHUD = true
                         }
                     },
-                    onLearnTap: {}
+                    onLearnTap: {
+                        withAnimation(.easeInOut(duration: 0.2)) {
+                            showHowItWorks = true
+                        }
+                    }
                 )
                 .transition(.opacity)
+            }
+
+            if !showHUD && showHowItWorks {
+                HowItWorksPopupView(
+                    targetLabels: CineintoshObjectClasses.filter,
+                    onClose: {
+                        withAnimation(.easeInOut(duration: 0.2)) {
+                            showHowItWorks = false
+                        }
+                    }
+                )
+                .transition(.scale(scale: 0.95).combined(with: .opacity))
+                .zIndex(30)
             }
         }
         .background(Color.cineintoshWhite)
         .animation(.easeInOut(duration: 0.3), value: showHUD)
+        .animation(.easeInOut(duration: 0.2), value: showHowItWorks)
+    }
+}
+
+private struct HowItWorksPopupView: View {
+    let targetLabels: [String]
+    let onClose: () -> Void
+
+    private var classSummary: String {
+        targetLabels.joined(separator: ", ")
+    }
+
+    var body: some View {
+        ZStack {
+            Color.black.opacity(0.42)
+                .ignoresSafeArea()
+                .onTapGesture(perform: onClose)
+
+            VStack(spacing: 0) {
+                headerBar
+
+                VStack(alignment: .leading, spacing: 12) {
+                    Text("Cineintosh is an offline vision monitor for your Mac.")
+                        .font(.system(size: 14, weight: .semibold, design: .monospaced))
+                        .foregroundStyle(Color.black.opacity(0.86))
+
+                    stepRow("1", "Reads live frames from your camera.")
+                    stepRow("2", "Runs on-device Core ML + Vision object detection.")
+                    stepRow("3", "Applies confidence thresholds and class filters.")
+                    stepRow("4", "Shows boxes, heat map, event log, and short captions.")
+
+                    Text("Target classes: \(classSummary)")
+                        .font(.system(size: 12, weight: .bold, design: .monospaced))
+                        .foregroundStyle(Color.black.opacity(0.74))
+                        .padding(.top, 2)
+
+                    HStack {
+                        Spacer(minLength: 0)
+                        Button("CLOSE", action: onClose)
+                            .font(.system(size: 12, weight: .bold, design: .monospaced))
+                            .foregroundStyle(Color.black.opacity(0.84))
+                            .padding(.horizontal, 18)
+                            .padding(.vertical, 7)
+                            .background(Color.cineintoshRetroSurface)
+                            .cineintoshRetroBevel()
+                            .buttonStyle(.plain)
+                    }
+                    .padding(.top, 2)
+                }
+                .padding(14)
+                .background(Color.cineintoshRetroSurface.opacity(0.98))
+            }
+            .frame(maxWidth: 560)
+            .padding(.horizontal, 24)
+            .shadow(color: .black.opacity(0.35), radius: 16, x: 0, y: 10)
+            .cineintoshRetroBevel()
+        }
+    }
+
+    private var headerBar: some View {
+        HStack(spacing: 8) {
+            Image(systemName: "questionmark.circle.fill")
+                .font(.system(size: 12, weight: .bold))
+                .foregroundStyle(Color.white.opacity(0.95))
+
+            Text("HOW IT WORKS")
+                .font(.system(size: 13, weight: .bold, design: .monospaced))
+                .foregroundStyle(.white)
+
+            Spacer(minLength: 0)
+
+            Button(action: onClose) {
+                Image(systemName: "xmark")
+                    .font(.system(size: 9, weight: .black))
+                    .foregroundStyle(Color.black.opacity(0.88))
+                    .frame(width: 16, height: 16)
+                    .background(Color.cineintoshRetroSurface)
+                    .cineintoshRetroBevel(pressed: true)
+            }
+            .buttonStyle(.plain)
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 8)
+        .background(
+            LinearGradient(
+                colors: [
+                    Color(red: 0.10, green: 0.22, blue: 0.63),
+                    Color(red: 0.05, green: 0.12, blue: 0.43)
+                ],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+        )
+    }
+
+    private func stepRow(_ index: String, _ text: String) -> some View {
+        HStack(alignment: .top, spacing: 8) {
+            Text(index)
+                .font(.system(size: 11, weight: .bold, design: .monospaced))
+                .foregroundStyle(.white)
+                .frame(width: 16, height: 16)
+                .background(Color(red: 0.10, green: 0.22, blue: 0.63))
+                .clipShape(RoundedRectangle(cornerRadius: 2))
+
+            Text(text)
+                .font(.system(size: 12, weight: .medium, design: .monospaced))
+                .foregroundStyle(Color.black.opacity(0.82))
+                .fixedSize(horizontal: false, vertical: true)
+
+            Spacer(minLength: 0)
+        }
     }
 }
 
@@ -973,7 +1103,7 @@ private final class VisionCoreMLDetectionService {
     private let processingQueue = DispatchQueue(label: "cineintosh.vision.detector", qos: .utility)
     private let stateQueue = DispatchQueue(label: "cineintosh.vision.detector.state")
     private let baseFrameStride: Int
-    private let targetLabels = ["person", "book", "pen", "cup", "banana"]
+    private let targetLabels = CineintoshObjectClasses.filter
     private var frameCounter = 0
     private var isProcessing = false
     private var adaptiveFrameStride: Int
@@ -1557,7 +1687,7 @@ private final class VisionCoreMLDetectionService {
 
 @MainActor
 private final class HUDPrototypeStore: ObservableObject {
-    static let allLabels = ["person", "book", "pen", "cup", "banana"]
+    static let allLabels = CineintoshObjectClasses.filter
     static let heatMapColumns = 14
     static let heatMapRows = 8
 
