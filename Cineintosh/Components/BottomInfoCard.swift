@@ -4,14 +4,14 @@ struct BottomInfoCard: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
             Text("BROWSE THOUSANDS OF VERIFIED LISTINGS, CONNECT WITH TOP AGENTS.")
-                .font(SignalFonts.interDisplay(size: 16, weight: .regular))
+                .font(CineintoshFonts.interDisplay(size: 16, weight: .regular))
                 .foregroundStyle(.white)
                 .lineSpacing(3)
 
             Button(action: {}) {
                 Text("CONTACT US")
-                    .font(SignalFonts.manrope(size: 16, weight: .semibold))
-                    .foregroundStyle(Color.signalInk)
+                    .font(CineintoshFonts.manrope(size: 16, weight: .semibold))
+                    .foregroundStyle(Color.cineintoshInk)
                     .padding(.vertical, 12)
                     .padding(.horizontal, 24)
                     .background(Color.white, in: Capsule())

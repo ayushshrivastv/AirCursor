@@ -8,10 +8,10 @@ struct TopNavigationBar: View {
             let logoWidth = max(96, 210 * scale)
 
             HStack(alignment: .center) {
-                Text("SIGNAL")
-                    .font(SignalFonts.interDisplay(size: 18 * scale, weight: .semibold))
+                Text("CINEINTOSH.")
+                    .font(CineintoshFonts.interDisplay(size: 18 * scale, weight: .semibold))
                     .tracking(1.6 * scale)
-                    .foregroundStyle(Color.signalInk)
+                    .foregroundStyle(Color.cineintoshInk)
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
                     .frame(width: logoWidth, height: 18 * scale, alignment: .leading)

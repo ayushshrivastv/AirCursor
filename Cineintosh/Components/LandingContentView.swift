@@ -4,7 +4,7 @@ struct LandingContentView: View {
     let onStartTap: () -> Void
     let onLearnTap: () -> Void
     private static let backgroundImage: NSImage? = {
-        guard let url = Bundle.main.url(forResource: "SignalBackground", withExtension: "png") else {
+        guard let url = Bundle.main.url(forResource: "CineintoshBackground", withExtension: "png") else {
             return nil
         }
         return NSImage(contentsOf: url)
@@ -20,7 +20,7 @@ struct LandingContentView: View {
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .clipped()
                 } else {
-                    Image("SignalBackground")
+                    Image("CineintoshBackground")
                         .resizable()
                         .scaledToFill()
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -29,7 +29,7 @@ struct LandingContentView: View {
 
                 Color.black.opacity(0.12)
 
-                SignalTitleOverlay()
+                CineintoshTitleOverlay()
                     .frame(maxWidth: min(proxy.size.width - 64, 1600))
                     .position(x: proxy.size.width / 2, y: 149 + 130)
                     .zIndex(1)
@@ -61,7 +61,7 @@ struct LandingContentView: View {
                     .zIndex(60)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.signalWhite)
+            .background(Color.cineintoshWhite)
             .clipped()
         }
     }
@@ -78,15 +78,15 @@ private struct CenterActionBar: View {
                     Image(systemName: "sparkles")
                         .font(.system(size: 14, weight: .bold))
                     Text("START")
-                        .font(SignalFonts.manrope(size: 16, weight: .semibold))
+                        .font(CineintoshFonts.manrope(size: 16, weight: .semibold))
                 }
-                .foregroundStyle(Color.signalInk)
+                .foregroundStyle(Color.cineintoshInk)
                 .padding(.vertical, 14)
                 .padding(.horizontal, 22)
                 .background(
                     Capsule()
                         .fill(Color.white)
-                        .overlay(Capsule().stroke(Color.signalInk.opacity(0.14), lineWidth: 1))
+                        .overlay(Capsule().stroke(Color.cineintoshInk.opacity(0.14), lineWidth: 1))
                 )
                 .shadow(color: Color.black.opacity(0.2), radius: 12, x: 0, y: 7)
             }
@@ -97,15 +97,15 @@ private struct CenterActionBar: View {
                     Image(systemName: "book.closed")
                         .font(.system(size: 13, weight: .semibold))
                     Text("LEARN")
-                        .font(SignalFonts.interDisplay(size: 15, weight: .medium))
+                        .font(CineintoshFonts.interDisplay(size: 15, weight: .medium))
                 }
-                .foregroundStyle(Color.signalInk)
+                .foregroundStyle(Color.cineintoshInk)
                 .padding(.vertical, 13)
                 .padding(.horizontal, 20)
                 .background(
                     Capsule()
                         .fill(Color.white.opacity(0.95))
-                        .overlay(Capsule().stroke(Color.signalInk.opacity(0.14), lineWidth: 1))
+                        .overlay(Capsule().stroke(Color.cineintoshInk.opacity(0.14), lineWidth: 1))
                 )
             }
             .buttonStyle(.plain)

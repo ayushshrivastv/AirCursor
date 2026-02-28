@@ -29,7 +29,7 @@ struct HomeView: View {
                 .transition(.opacity)
             }
         }
-        .background(Color.signalWhite)
+        .background(Color.cineintoshWhite)
         .animation(.easeInOut(duration: 0.3), value: showHUD)
     }
 }
@@ -704,8 +704,8 @@ private final class CameraService: NSObject, ObservableObject, AVCaptureVideoDat
     var onFrameSample: ((CMSampleBuffer, CameraFrameFeatures) -> Void)?
     var onStatusChange: ((String) -> Void)?
 
-    private let sessionQueue = DispatchQueue(label: "signal.camera.session")
-    private let sampleQueue = DispatchQueue(label: "signal.camera.sample")
+    private let sessionQueue = DispatchQueue(label: "cineintosh.camera.session")
+    private let sampleQueue = DispatchQueue(label: "cineintosh.camera.sample")
     private var isConfigured = false
     private var lastTimestamp = CMTime.invalid
     private var smoothedFPS: Double = 0
@@ -970,8 +970,8 @@ private struct VisionDetectionSnapshot {
 }
 
 private final class VisionCoreMLDetectionService {
-    private let processingQueue = DispatchQueue(label: "signal.vision.detector", qos: .utility)
-    private let stateQueue = DispatchQueue(label: "signal.vision.detector.state")
+    private let processingQueue = DispatchQueue(label: "cineintosh.vision.detector", qos: .utility)
+    private let stateQueue = DispatchQueue(label: "cineintosh.vision.detector.state")
     private let baseFrameStride: Int
     private let targetLabels = ["person", "book", "pen", "cup", "banana"]
     private var frameCounter = 0
@@ -1534,7 +1534,7 @@ private final class VisionCoreMLDetectionService {
     }
 
     private static func makeCoreMLObjectRequest() -> VNCoreMLRequest? {
-        let candidateNames = ["TinyObjectDetector", "SignalTinyDetector", "ChallengeTinyDetector"]
+        let candidateNames = ["TinyObjectDetector", "CineintoshTinyDetector", "ChallengeTinyDetector"]
         let configuration = MLModelConfiguration()
         configuration.computeUnits = .cpuAndNeuralEngine
         for name in candidateNames {

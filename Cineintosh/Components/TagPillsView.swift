@@ -7,7 +7,7 @@ struct TagPillsView: View {
         TagWrapLayout(spacing: 8) {
             ForEach(tags, id: \.self) { tag in
                 Text(tag)
-                    .font(SignalFonts.interDisplay(size: 12, weight: .medium))
+                    .font(CineintoshFonts.interDisplay(size: 12, weight: .medium))
                     .foregroundStyle(.white)
                     .lineSpacing(8)
                     .padding(.vertical, 4)
@@ -17,7 +17,7 @@ struct TagPillsView: View {
                             .fill(.ultraThinMaterial)
                             .overlay {
                                 RoundedRectangle(cornerRadius: 100, style: .continuous)
-                                    .fill(Color.signalTagTeal)
+                                    .fill(Color.cineintoshTagTeal)
                             }
                     )
             }

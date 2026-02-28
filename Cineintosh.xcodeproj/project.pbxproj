@@ -11,14 +11,14 @@
 		25091D29C9319D4B52218615 /* TagPillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA272A18A745F6F2DFFB7F /* TagPillsView.swift */; };
 		54269F7B1CE2BAC5E80B80E2 /* AntonSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12D7917EE704CDD78CAB8708 /* AntonSC-Regular.ttf */; };
 		58CBC0BE5318948CE8E86A32 /* BottomInfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22685FF6C3C3FE3394029F6 /* BottomInfoCard.swift */; };
-		6609232200E5FFE7540588DF /* SignalTitleOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B98B45E18BA813C0C8EA7E9 /* SignalTitleOverlay.swift */; };
-		6879F1D9C095E46ECC011152 /* SignalBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 871845332C17813608897CE5 /* SignalBackground.png */; };
+		6609232200E5FFE7540588DF /* CineintoshTitleOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B98B45E18BA813C0C8EA7E9 /* CineintoshTitleOverlay.swift */; };
+		6879F1D9C095E46ECC011152 /* CineintoshBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 871845332C17813608897CE5 /* CineintoshBackground.png */; };
 		821FA84CD1B47DCE1651453F /* Manrope-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4189F4ACA66F5CD28CB527C /* Manrope-VariableFont_wght.ttf */; };
 		825872B063BA3F337AC21F22 /* Inter-VariableFont_opsz_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52666E8720BAF886EA22C46E /* Inter-VariableFont_opsz_wght.ttf */; };
 		845A8FC537C1771C69926398 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7616F3362AEDCCD6EEA055 /* HomeView.swift */; };
-		A565550C983F647D80F840EF /* SignalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3413A745B66C81BD7C844EA /* SignalApp.swift */; };
+		A565550C983F647D80F840EF /* CineintoshApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3413A745B66C81BD7C844EA /* CineintoshApp.swift */; };
 		A7D3172EF7638550006A8465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69E5DD8FB4D8960CC21C618 /* Assets.xcassets */; };
-		A8543505CCFA3F7E3EFAC3A6 /* SignalTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED41A15746456C672B06EC9 /* SignalTheme.swift */; };
+		A8543505CCFA3F7E3EFAC3A6 /* CineintoshTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED41A15746456C672B06EC9 /* CineintoshTheme.swift */; };
 		EBEC4E11C5D25BD0BCFD2D34 /* LandingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1501C251D6BAB2459288212 /* LandingContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,13 +26,13 @@
 		0D151D2A890F7F870419D93B /* TopNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationBar.swift; sourceTree = "<group>"; };
 		0F7616F3362AEDCCD6EEA055 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		12D7917EE704CDD78CAB8708 /* AntonSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AntonSC-Regular.ttf"; sourceTree = "<group>"; };
-		1ED41A15746456C672B06EC9 /* SignalTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalTheme.swift; sourceTree = "<group>"; };
+		1ED41A15746456C672B06EC9 /* CineintoshTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineintoshTheme.swift; sourceTree = "<group>"; };
 		2ABA272A18A745F6F2DFFB7F /* TagPillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPillsView.swift; sourceTree = "<group>"; };
 		52666E8720BAF886EA22C46E /* Inter-VariableFont_opsz_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_opsz_wght.ttf"; sourceTree = "<group>"; };
-		871845332C17813608897CE5 /* SignalBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignalBackground.png; sourceTree = "<group>"; };
-		9B98B45E18BA813C0C8EA7E9 /* SignalTitleOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalTitleOverlay.swift; sourceTree = "<group>"; };
-		9D5999FF8532367E6DBD5F60 /* Signal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Signal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3413A745B66C81BD7C844EA /* SignalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalApp.swift; sourceTree = "<group>"; };
+		871845332C17813608897CE5 /* CineintoshBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CineintoshBackground.png; sourceTree = "<group>"; };
+		9B98B45E18BA813C0C8EA7E9 /* CineintoshTitleOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineintoshTitleOverlay.swift; sourceTree = "<group>"; };
+		9D5999FF8532367E6DBD5F60 /* Cineintosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cineintosh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3413A745B66C81BD7C844EA /* CineintoshApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineintoshApp.swift; sourceTree = "<group>"; };
 		B69E5DD8FB4D8960CC21C618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4189F4ACA66F5CD28CB527C /* Manrope-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		D1501C251D6BAB2459288212 /* LandingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingContentView.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		13DFB72E369D4207F5632672 /* Signal */ = {
+		13DFB72E369D4207F5632672 /* Cineintosh */ = {
 			isa = PBXGroup;
 			children = (
 				D3184716A6AF665B7FE909DF /* App */,
@@ -48,7 +48,7 @@
 				A8EDFD94A26555771D38335E /* Resources */,
 				E20B4C53AF03948ADFEFD740 /* Theme */,
 			);
-			path = Signal;
+			path = Cineintosh;
 			sourceTree = "<group>";
 		};
 		6C95DC179CBAF1EAFAD783F1 /* Components */ = {
@@ -56,7 +56,7 @@
 			children = (
 				F22685FF6C3C3FE3394029F6 /* BottomInfoCard.swift */,
 				D1501C251D6BAB2459288212 /* LandingContentView.swift */,
-				9B98B45E18BA813C0C8EA7E9 /* SignalTitleOverlay.swift */,
+				9B98B45E18BA813C0C8EA7E9 /* CineintoshTitleOverlay.swift */,
 				2ABA272A18A745F6F2DFFB7F /* TagPillsView.swift */,
 				0D151D2A890F7F870419D93B /* TopNavigationBar.swift */,
 			);
@@ -76,7 +76,7 @@
 		CE7F163B2F3518BF9B42C6EC /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				871845332C17813608897CE5 /* SignalBackground.png */,
+				871845332C17813608897CE5 /* CineintoshBackground.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 		D2A9230E27E9F4AC1910E6A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D5999FF8532367E6DBD5F60 /* Signal.app */,
+				9D5999FF8532367E6DBD5F60 /* Cineintosh.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				0F7616F3362AEDCCD6EEA055 /* HomeView.swift */,
-				A3413A745B66C81BD7C844EA /* SignalApp.swift */,
+				A3413A745B66C81BD7C844EA /* CineintoshApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -111,7 +111,7 @@
 		E20B4C53AF03948ADFEFD740 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				1ED41A15746456C672B06EC9 /* SignalTheme.swift */,
+				1ED41A15746456C672B06EC9 /* CineintoshTheme.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 		F1834509B7DA2D7381659AD2 = {
 			isa = PBXGroup;
 			children = (
-				13DFB72E369D4207F5632672 /* Signal */,
+				13DFB72E369D4207F5632672 /* Cineintosh */,
 				D2A9230E27E9F4AC1910E6A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,9 +127,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC6A4C5D9DE6F0E0B4A0E04E /* Signal */ = {
+		AC6A4C5D9DE6F0E0B4A0E04E /* Cineintosh */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D79D973A7FB99E3A44CF8227 /* Build configuration list for PBXNativeTarget "Signal" */;
+			buildConfigurationList = D79D973A7FB99E3A44CF8227 /* Build configuration list for PBXNativeTarget "Cineintosh" */;
 			buildPhases = (
 				CCA9DD53B157AF4FD18F1326 /* Sources */,
 				D85CE5696E0E4563C56B9A9C /* Resources */,
@@ -138,11 +138,11 @@
 			);
 			dependencies = (
 			);
-			name = Signal;
+			name = Cineintosh;
 			packageProductDependencies = (
 			);
-			productName = Signal;
-			productReference = 9D5999FF8532367E6DBD5F60 /* Signal.app */;
+			productName = Cineintosh;
+			productReference = 9D5999FF8532367E6DBD5F60 /* Cineintosh.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -154,7 +154,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 			};
-			buildConfigurationList = 4294BC7AC0BF0C21034A213E /* Build configuration list for PBXProject "Signal" */;
+			buildConfigurationList = 4294BC7AC0BF0C21034A213E /* Build configuration list for PBXProject "Cineintosh" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -168,7 +168,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC6A4C5D9DE6F0E0B4A0E04E /* Signal */,
+				AC6A4C5D9DE6F0E0B4A0E04E /* Cineintosh */,
 			);
 		};
 /* End PBXProject section */
@@ -182,7 +182,7 @@
 				A7D3172EF7638550006A8465 /* Assets.xcassets in Resources */,
 				825872B063BA3F337AC21F22 /* Inter-VariableFont_opsz_wght.ttf in Resources */,
 				821FA84CD1B47DCE1651453F /* Manrope-VariableFont_wght.ttf in Resources */,
-				6879F1D9C095E46ECC011152 /* SignalBackground.png in Resources */,
+				6879F1D9C095E46ECC011152 /* CineintoshBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,9 +196,9 @@
 				58CBC0BE5318948CE8E86A32 /* BottomInfoCard.swift in Sources */,
 				845A8FC537C1771C69926398 /* HomeView.swift in Sources */,
 				EBEC4E11C5D25BD0BCFD2D34 /* LandingContentView.swift in Sources */,
-				A565550C983F647D80F840EF /* SignalApp.swift in Sources */,
-				A8543505CCFA3F7E3EFAC3A6 /* SignalTheme.swift in Sources */,
-				6609232200E5FFE7540588DF /* SignalTitleOverlay.swift in Sources */,
+				A565550C983F647D80F840EF /* CineintoshApp.swift in Sources */,
+				A8543505CCFA3F7E3EFAC3A6 /* CineintoshTheme.swift in Sources */,
+				6609232200E5FFE7540588DF /* CineintoshTitleOverlay.swift in Sources */,
 				25091D29C9319D4B52218615 /* TagPillsView.swift in Sources */,
 				08F42B76272E2DD8578544AC /* TopNavigationBar.swift in Sources */,
 			);
@@ -217,7 +217,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_NAME = Signal;
+				PRODUCT_NAME = Cineintosh;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
 			};
@@ -269,12 +269,12 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Signal uses the camera to preview your hand gestures for air typing.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Cineintosh uses the camera to preview your hand gestures for air typing.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Signal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Cineintosh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
@@ -336,13 +336,13 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Signal uses the camera to preview your hand gestures for air typing.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Cineintosh uses the camera to preview your hand gestures for air typing.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Signal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Cineintosh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
@@ -362,7 +362,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_NAME = Signal;
+				PRODUCT_NAME = Cineintosh;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
 			};
@@ -371,7 +371,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4294BC7AC0BF0C21034A213E /* Build configuration list for PBXProject "Signal" */ = {
+		4294BC7AC0BF0C21034A213E /* Build configuration list for PBXProject "Cineintosh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95A097D8573A7D7E9271C349 /* Debug */,
@@ -380,7 +380,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		D79D973A7FB99E3A44CF8227 /* Build configuration list for PBXNativeTarget "Signal" */ = {
+		D79D973A7FB99E3A44CF8227 /* Build configuration list for PBXNativeTarget "Cineintosh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD8F13248922B46C35AF417B /* Debug */,

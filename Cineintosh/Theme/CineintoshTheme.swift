@@ -2,12 +2,12 @@ import CoreText
 import SwiftUI
 
 extension Color {
-    static let signalWhite = Color(red: 1, green: 1, blue: 1)
-    static let signalInk = Color(red: 30 / 255, green: 46 / 255, blue: 55 / 255)
-    static let signalTagTeal = Color(red: 83 / 255, green: 148 / 255, blue: 180 / 255, opacity: 0.5)
+    static let cineintoshWhite = Color(red: 1, green: 1, blue: 1)
+    static let cineintoshInk = Color(red: 30 / 255, green: 46 / 255, blue: 55 / 255)
+    static let cineintoshTagTeal = Color(red: 83 / 255, green: 148 / 255, blue: 180 / 255, opacity: 0.5)
 }
 
-enum SignalFonts {
+enum CineintoshFonts {
     static func antonSC(size: CGFloat) -> Font {
         Font.custom("Anton SC", size: size)
     }

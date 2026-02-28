@@ -1,7 +1,7 @@
 import AppKit
 import SwiftUI
 
-private final class SignalAppDelegate: NSObject, NSApplicationDelegate {
+private final class CineintoshAppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
         NSApp.setActivationPolicy(.regular)
         NSApp.activate(ignoringOtherApps: true)
@@ -13,8 +13,8 @@ private final class SignalAppDelegate: NSObject, NSApplicationDelegate {
 }
 
 @main
-struct SignalApp: App {
-    @NSApplicationDelegateAdaptor(SignalAppDelegate.self) private var appDelegate
+struct CineintoshApp: App {
+    @NSApplicationDelegateAdaptor(CineintoshAppDelegate.self) private var appDelegate
 
     init() {
         FontLoader.registerBundledFonts()

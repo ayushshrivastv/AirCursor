@@ -1,9 +1,9 @@
 import SwiftUI
 
-struct SignalTitleOverlay: View {
+struct CineintoshTitleOverlay: View {
     var body: some View {
-        let title = Text("SIGNAL")
-            .font(SignalFonts.antonSC(size: 260))
+        let title = Text("CINEINTOSH.")
+            .font(CineintoshFonts.antonSC(size: 260))
             .tracking(-2)
             .lineLimit(1)
             .minimumScaleFactor(0.2)
